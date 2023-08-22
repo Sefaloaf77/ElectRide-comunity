@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ElectRide Community</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/809b4530df.js" crossorigin="anonymous"></script>
+
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!-- sidebar -->
+
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+        aria-controls="offcanvasScrolling" style="transform: rotate(270deg); margin-left: -42px; margin-top:
+        150px;position: fixed; z-index: 8;">SEE SIDEBAR!</button>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">SIDEBAR</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">ARTIKEL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">EVENT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">GALERI FOTO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">KLIEN KAMI</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        LOGIN
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">SIGN IN</a></li>
+                        <li><a class="dropdown-item" href="#">SIGN UP</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- logo -->
+    <header>
+        <div class="logo container">
+            <a class="d-flex align-items-center">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <img src="assets/img/logo.jpg" class="rounded-circle me-1 ms-sm-2" alt="">
+                <h1>ElectRide Community<span>.</span></h1>
+            </a>
+        </div>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">ElectRide</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-sm-4" id="navbarSupportedContent">
+                    <ul class="navbar-nav gap-3 mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link  active" aria-current="page" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile.html">PROFILE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="visi-misi.html">VISI-MISI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="produk.html">PRODUK KAMI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontak.html">KONTAK KAMI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tentang.html">TENTANG KAMI</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/3.jpeg');">
+        <div class="container position-relative d-flex flex-column align-items-center">
+            <h2>Artikel</h2>
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li>Artikel</li>
+            </ol>
+
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- artikel -->
+    <section id="artikel" class="artikel my-5">
+        <div class="container my-5">
+            <div class="row">
+                <div class="col">
+                    <div class="img" style="height: 300px; background-image: url(assets/img/foto3.jpg);">
+                    </div>
+                    <div class="body my-4">
+                        <h2 class="judul fw-bold">
+                            Mengaspal Menuju Masa Depan Ramah Lingkungan
+                        </h2>
+                        <div class="meta-top">
+                            <ul class="d-flex gap-2">
+                                <li class="d-flex align-items-center">
+                                    <i class="fa-solid fa-user-tie me-2"></i>
+                                    <a href="blog-details.html">Chris
+                                        Martin</a>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="fa-solid fa-clock me-2"></i>
+                                    <a href="blog-details.html">Jan 1, 2022
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="isi">
+                            <p>Dalam era di mana isu lingkungan semakin mendesak, motor listrik telah muncul sebagai
+                                solusi
+                                inovatif untuk mengurangi emisi gas rumah kaca dan menjaga kualitas udara yang lebih
+                                baik di
+                                kota-kota kita. ElectRide hadir sebagai wadah bagi komunitas penggemar motor
+                                listrik yang bersemangat untuk mempercepat transisi menuju kendaraan beremisi nol.
+                                Dengan
+                                anggota dari berbagai latar belakang dan pengetahuan yang beragam, klub ini menjadi
+                                platform
+                                bagi mereka yang berbagi semangat yang sama untuk mengurangi dampak negatif transportasi
+                                terhadap lingkungan.</p>
+                            <p>Visi klub ini adalah menciptakan perubahan positif dalam industri otomotif dengan
+                                mendorong penggunaan motor listrik secara luas dan mempromosikan teknologi yang ramah
+                                lingkungan. Melalui berbagai kegiatan, klub ini bertujuan untuk memberikan pengetahuan
+                                yang akurat tentang motor listrik, mengadakan diskusi, serta mengedukasi masyarakat
+                                tentang manfaat dan keunggulan motor listrik dibandingkan dengan motor konvensional.</p>
+                            <p>ElectRide juga berperan penting dalam membangun komunitas yang solid. Dari
+                                acara turing bersama, pertemuan bulanan, hingga lokakarya pemeliharaan, klub ini
+                                memberikan kesempatan bagi anggotanya untuk berinteraksi, berbagi pengalaman, dan
+                                saling mendukung. Dalam suasana yang santai dan penuh semangat, anggota klub dapat
+                                bertukar pengetahuan, mempelajari praktik perawatan yang efektif, dan menemukan
+                                sumber inspirasi baru dalam motor listrik.</p>
+                            <p>Selain itu, ElectRide juga menjalankan peran penting dalam memberikan akses ke
+                                produk dan layanan terkait motor listrik. Dari motor listrik terkemuka hingga perangkat
+                                pengisian baterai yang canggih, klub ini menyediakan sumber daya yang diperlukan bagi
+                                anggotanya untuk memperoleh dan memelihara motor listrik dengan optimal. Dengan begitu,
+                                anggota klub dapat merasakan pengalaman berkendara yang mulus dan menyenangkan.</p>
+                            <p>Ketika datang ke event, ElectRide tak pernah kehabisan ide. Mereka secara rutin
+                                mengadakan acara yang mendukung visi dan misi klub, seperti pameran teknologi,
+                                kompetisi, dan turing ke destinasi menarik. Event-event ini tidak hanya memberikan
+                                kesempatan untuk bersenang-senang dan menjalin persahabatan baru, tetapi juga</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+
+        <div class="footer-content position-relative">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-info">
+                            <h3>ElektRide <br>Community</h3>
+                            <p>
+                                Malang, Jawa Timur, Indonesia<br><br>
+                                <strong>Phone:</strong> +62 877 6113 9183<br>
+                                <strong>Email:</strong> sefalo@gmail.com<br>
+                            </p>
+                            <div class="social-links d-flex mt-3">
+                                <a href="#" class="d-flex align-items-center justify-content-center"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="#" class="d-flex align-items-center justify-content-center"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <a href="#" class="d-flex align-items-center justify-content-center"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div><!-- End footer info column-->
+
+                    <div class="col-lg-2 col-md-3 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="profile.html">PROFILE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="visi-misi.html">VISI-MISI</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="produk.html">PRODUK KAMI</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="kontak.html">KONTAK KAMI</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tentang.html">TENTANG KAMI</a>
+                            </li>
+                        </ul>
+                    </div><!-- End footer links column-->
+
+                    <div class="col-lg-2 col-md-3 footer-links">
+                        <h4>Sidebar</h4>
+                        <ul>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">ARTIKEL</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">EVENT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">GALERI FOTO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">KLIEN KAMI</a>
+                            </li>
+                        </ul>
+                    </div><!-- End footer links column-->
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-legal text-center position-relative">
+            <div class="container">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>Sertikom BNSP JWD</span></strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    Designed by <a href="https://www.linkedin.com/in/sefaloaf/"> Sefalo 'Aadila Faruq</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+
+    <!-- slick -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
+    <script>
+        $('.slick').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            centerMode: true,
+            variableWidth: true,
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 5,
+                        centerMode: true,
+                        variableWidth: true,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        centerMode: true,
+                        variableWidth: true,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    </script>
+
+    <!-- counter -->
+    <script src="node_modules/purecounter/purecounter_vanilla.js"></script>
+
+    <script>
+        new PureCounter();
+    </script>
+</body>
+
+</html>

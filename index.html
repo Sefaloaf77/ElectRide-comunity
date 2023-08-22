@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ElectRide Community</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/809b4530df.js" crossorigin="anonymous"></script>
+
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!-- sidebar -->
+
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+        aria-controls="offcanvasScrolling" style="transform: rotate(270deg); margin-left: -42px; margin-top:
+        150px;position: fixed; z-index: 8;">SEE SIDEBAR!</button>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">SIDEBAR</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="artikel.html">ARTIKEL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="event.html">EVENT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galeri.html">GALERI FOTO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="klien.html">KLIEN KAMI</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        LOGIN
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">SIGN IN</a></li>
+                        <li><a class="dropdown-item" href="#">SIGN UP</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- logo -->
+    <header>
+        <div class="logo container">
+            <a class="d-flex align-items-center">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <img src="assets/img/logo.jpg" class="rounded-circle me-1 ms-sm-2" alt="">
+                <h1>ElectRide Community<span>.</span></h1>
+            </a>
+        </div>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">ElectRide</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-sm-4" id="navbarSupportedContent">
+                    <ul class="navbar-nav gap-3 mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile.html">PROFILE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="visi-misi.html">VISI-MISI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="produk.html">PRODUK KAMI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontak.html">KONTAK KAMI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tentang.html">TENTANG KAMI</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- hero -->
+    <section id="hero" class="hero">
+
+        <div class="info d-flex align-items-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <h2>Selamat Datang<br>ElectRide Community</h2>
+                        <span class="line"></span>
+                        <p>Kami adalah sebuah klub motor listrik yang berdedikasi untuk memajukan dan
+                            mempopulerkan penggunaan motor listrik sebagai solusi transportasi berkelanjutan. Dengan
+                            menciptakan dunia di mana motor listrik menjadi pilihan utama dalam mobilitas, mengurangi
+                            jejak karbon,
+                            dan menjaga kelestarian lingkungan bagi masyarakat.</p>
+                        <a href="#visi-misi" class="btn-get-started">Get
+                            Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="assets/img/hero-carousel/hero-carousel (1).jpg" class="d-block w-100 h-100 img-fluid"
+                        style="filter: brightness(30%);" alt="carousel-background">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="assets/img/hero-carousel/hero-carousel (2).jpg" class="d-block w-100 h-100 img-fluid"
+                        style="filter: brightness(30%);" alt="carousel-background">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="assets/img/hero-carousel/hero-carousel (6).jpg" class="d-block w-100 h-100 img-fluid"
+                        style="filter: brightness(30%);" alt="carousel-background">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="assets/img/hero-carousel/hero-carousel (3).jpg" class="d-block w-100 h-100 img-fluid"
+                        style="filter: brightness(30%);" alt="carousel-background">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="assets/img/hero-carousel/hero-carousel (4).jpg" class="d-block w-100 h-100 img-fluid"
+                        style="filter: brightness(30%);" alt="carousel-background">
+                </div>
+            </div>
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button> -->
+        </div>
+    </section>
+    <!-- End Hero -->
+
+    <!-- visi misi -->
+    <section class="visimisi" id="visi-misi">
+        <div class="container">
+            <div class="row my-5 py-4">
+                <div class="col-sm-6 col-12">
+                    <img src="assets/img/5.jpg" alt="visi-misi" class="img-fluid">
+                </div>
+                <div class="col-sm-6 col-12 info">
+                    <h3 class="fw-bold">Visi-Misi ElectRide Community:</h3>
+                    <span class="line-start"></span>
+                    <div class="d-flex icon gap-3 position-relative mb-5">
+                        <i class="fa-solid fa-rocket rounded-3 flex-shrink-0 shadow"></i>
+                        <div class="visi">
+                            <h4>Visi</h4>
+                            <p>Menjadi pusat inspirasi dan pengetahuan tentang motor listrik, serta mendorong perubahan
+                                positif dalam industri otomotif. </p>
+                        </div>
+                    </div>
+                    <div class="d-flex icon gap-3 position-relative mb-5">
+                        <i class="fa-solid fa-flag-checkered rounded-3 flex-shrink-0 shadow"></i>
+                        <div class="visi">
+                            <h4>Misi</h4>
+                            <p>Menjadi pusat inspirasi dan pengetahuan tentang motor listrik, serta mendorong perubahan
+                                positif dalam industri otomotif. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- event -->
+    <section class="event" id="event">
+        <div class="container text-center my-4">
+            <h2 class="fw-bold">Galeri Foto</h2>
+            <span class="line"></span>
+            <div class="row mt-5 d-flex justify-content-center">
+                <div class="col-sm-4 col-12 text-center mx-auto">
+                    <figure class="figure">
+                        <img src="assets/img/foto1.jpg" class="figure-img img-fluid rounded" alt="galeri">
+                        <figcaption class="figure-caption">Touring Sunday Morning</figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-4 col-12 text-center mx-auto">
+                    <figure class="figure">
+                        <img src="assets/img/foto2.jpg" class="figure-img img-fluid rounded" alt="galeri">
+                        <figcaption class="figure-caption">Buka Bersama</figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-4 col-12 text-center mx-auto">
+                    <figure class="figure">
+                        <img src="assets/img/foto3.jpg" class="figure-img img-fluid rounded" alt="galeri">
+                        <figcaption class="figure-caption">Launching motor listrik di Malang, Jawa Timur</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col text-end">
+                    <a href="galeri.html">Lihat Selengkpanya <i class="fa-solid fa-chevron-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jasa -->
+    <section id="jasa" class="jasa my-5">
+        <div class="container my-5">
+            <div class="text-center mt-5">
+                <h2 class="fw-bold">Jasa ElectRide Community</h2>
+                <span class="line"></span>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 col-sm-6">
+                    <div class="card mb-3" style="max-width: inherit;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="assets/img/jasa/bengkel.jpg" class="img-fluid rounded-start h-100"
+                                    alt="Service">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Service</h5>
+                                    <p class="card-text">Setiap member ElektRide Community akan mendapatkan voucher
+                                        potongan harga service sebesar 30% dalam 1 bulan</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="card mb-3" style="max-width: inherit;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="assets/img/jasa/goto.jpeg" class="img-fluid rounded-start h-100"
+                                    alt="Service">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pengisian Daya Darurat</h5>
+                                    <p class="card-text">Kami akan membantu rekan yang kehabisan daya ketika jauh dari
+                                        pusat pengisian daya baterai motor dengan bawakan baterai cadangan ke posisi
+                                        rekan.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 2 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- artikel -->
+    <section id="artikel" class="artikel my-5">
+        <div class="container my-5">
+            <div class="text-center mt-5">
+                <h2 class="fw-bold">Artikel</h2>
+                <span class="line"></span>
+            </div>
+            <div class="row">
+                <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/img/artikel/14.jpg" class="card-img-top" alt="artikel">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Mengapa Motor Listrik adalah Pilihan yang Ramah
+                                    Lingkungan untuk
+                                    Menjelajahi Keindahan Alam</h5>
+                                <p class="card-text text-muted">Menjelajahi destinasi ramah lingkungan dengan bergabung
+                                    dalam
+                                    turing bersama Club Motor Listrik. Dari rute yang memperlihatkan keindahan alam
+                                    hingga kunjungan ke pusat pengisian energi terbarukan, kita akan mengungkapkan
+                                    potensi...</p>
+                                <div class="card-footer">
+                                    <a href="detail-artikel.html">Baca Selengkapnya<i
+                                            class="fa-solid fa-arrow-right ms-2 mt-3"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/img/artikel/15.jpg" class="card-img-top" alt="artikel">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Inovasi Terbaru dalam Motor Listrik: Menguak Teknologi
+                                    Baterai
+                                    yang Revolusioner</h5>
+                                <p class="card-text text-muted">Dari baterai lithium-ion hingga baterai paduan baru,
+                                    kita akan
+                                    menggali inovasi terkini yang bertujuan untuk meningkatkan jarak tempuh, waktu
+                                    pengisian, dan keandalan motor listrik. Temukan bagaimana perkembangan ini
+                                    mempercepat adopsi motor listrik dan mengubah lanskap mobilitas masa depan.</p>
+                                <div class="card-footer">
+                                    <a href="detail-artikel.html">Baca Selengkapnya<i
+                                            class="fa-solid fa-arrow-right ms-2 mt-3"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/img/artikel/7.jpg" class="card-img-top" alt="artikel">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Komunitas Club Motor Listrik: Menghubungkan Pecinta Motor
+                                    Ramah
+                                    Lingkungan di Seluruh Dunia</h5>
+                                <p class="card-text text-muted">Pecinta motor listrik berkumpul untuk berbagi
+                                    pengalaman,
+                                    pengetahuan, dan semangat dalam mendorong perubahan positif. Dari turing bersama
+                                    hingga acara edukatif, kita akan menjelajahi bagaimana komunitas ini menciptakan
+                                    ikatan sosial, menyebarkan informasi tentang motor listrik.</p>
+                                <div class="card-footer">
+                                    <a href="detail-artikel.html">Baca Selengkapnya<i
+                                            class="fa-solid fa-arrow-right ms-2 mt-3"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-2 mt-3">
+                <div class="col text-end">
+                    <a href="artikel.html">Lihat Selengkpanya <i class="fa-solid fa-chevron-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- klien -->
+    <section id="klien" class="klien my-5">
+        <div class="container my-5">
+            <div class="text-center mt-5">
+                <h2 class="fw-bold">Partner Kami</h2>
+                <span class="line"></span>
+            </div>
+            <div class="row mt-5">
+                <div class="slick">
+                    <div><img src="assets/img/partner/electrum.png" alt=""></div>
+                    <div><img src="assets/img/partner/gesits.png" alt=""></div>
+                    <div><img src="assets/img/partner/goto.png" alt=""></div>
+                    <div><img src="assets/img/partner/indika.png" alt=""></div>
+                    <div><img src="assets/img/partner/alva.png" alt=""></div>
+                    <div><img src="assets/img/partner/selis-logo.png" alt=""></div>
+                    <div><img src="assets/img/partner/volta-logo.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+
+        <div class="footer-content position-relative">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-info">
+                            <h3>ElektRide <br>Community</h3>
+                            <p>
+                                Malang, Jawa Timur, Indonesia<br><br>
+                                <strong>Phone:</strong> +62 877 6113 9183<br>
+                                <strong>Email:</strong> sefalo@gmail.com<br>
+                            </p>
+                            <div class="social-links d-flex mt-3">
+                                <a href="#" class="d-flex align-items-center justify-content-center"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="#" class="d-flex align-items-center justify-content-center"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <a href="#" class="d-flex align-items-center justify-content-center"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div><!-- End footer info column-->
+
+                    <div class="col-lg-2 col-md-3 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="profile.html">PROFILE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="visi-misi.html">VISI-MISI</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="produk.html">PRODUK KAMI</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="kontak.html">KONTAK KAMI</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tentang.html">TENTANG KAMI</a>
+                            </li>
+                        </ul>
+                    </div><!-- End footer links column-->
+
+                    <div class="col-lg-2 col-md-3 footer-links">
+                        <h4>Sidebar</h4>
+                        <ul>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="artikel.html">ARTIKEL</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="event.html">EVENT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="galeri.html">GALERI FOTO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="klien.html">KLIEN KAMI</a>
+                            </li>
+                        </ul>
+                    </div><!-- End footer links column-->
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-legal text-center position-relative">
+            <div class="container">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>Sertikom BNSP JWD</span></strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    Designed by <a href="https://www.linkedin.com/in/sefaloaf/"> Sefalo 'Aadila Faruq</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+
+    <!-- slick -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
+    <script>
+        $('.slick').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            centerMode: true,
+            variableWidth: true,
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 5,
+                        centerMode: true,
+                        variableWidth: true,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        centerMode: true,
+                        variableWidth: true,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    </script>
+</body>
+
+</html>

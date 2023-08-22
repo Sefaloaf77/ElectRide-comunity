@@ -1,0 +1,541 @@
+:root {
+    --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-primary: "Roboto", sans-serif;
+    --font-secondary: "Work Sans", sans-serif;
+}
+
+/* Colors */
+:root {
+    --color-default: rgb(8, 8, 110);
+    --color-primary: #feb900;
+    --color-secondary: #52565e;
+}
+
+/* Smooth scroll behavior */
+:root {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: var(--font-default);
+}
+
+a {
+    text-decoration: none;
+}
+
+header .logo img {
+    max-height: 150px;
+}
+
+header .logo a {
+    color: var(--color-default);
+}
+
+.navbar {
+    background-color: #feb900;
+    position: relative;
+    z-index: 5;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+    color: var(--color-default);
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    font-weight: 700;
+}
+
+#hero {
+    overflow: hidden;
+    height: 100vh;
+}
+
+#hero .info {
+    position: absolute;
+    z-index: 2;
+    inset: 0;
+    top: 600px;
+}
+
+#hero .info h2 {
+    color: var(--color-default);
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.line {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #feb900;
+    margin: 20px auto;
+}
+
+#hero .info p {
+    font-size: 12px;
+    color: var(--color-default);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#hero .info .btn-get-started {
+    border: 2px solid #feb900;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 12px 40px;
+    color: var(--color-default);
+}
+
+#hero .info .btn-get-started:hover {
+    background: #feb900;
+}
+
+#hero .carousel {
+    width: 100%;
+    height: 97vh;
+}
+
+.line-start {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #feb900;
+    margin: 20px 0;
+}
+
+.visimisi .info .icon i {
+    width: 30px;
+    height: 30px;
+    background-color: #feb900;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+}
+#event{
+    background-color: rgb(217, 247, 247);
+    padding: 20px;
+}
+#artikel{
+    background-color: rgb(217, 247, 247);
+    padding: 20px;
+}
+#jasa{
+    padding: 20px;
+}
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+    color: #fff;
+    background: url("../img/electrum.jpeg") top center no-repeat;
+    background-size: cover;
+    font-size: 14px;
+    padding: 80px 0 60px 0;
+    position: relative;
+    margin-top: 60px;
+}
+
+.footer:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    inset: 0;
+}
+
+.footer .footer-content .footer-info {
+    margin-bottom: 30px;
+}
+
+.footer .footer-content .footer-info h3 {
+    font-size: 28px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer .footer-content .footer-info h3 span {
+    color: var(--color-primary);
+}
+
+.footer .footer-content .footer-info p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: var(--font-primary);
+    color: #fff;
+}
+
+.footer .footer-content .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    line-height: 1;
+    margin-right: 8px;
+    border-radius: 4px;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+.footer .footer-content .social-links a:hover {
+    background: var(--color-primary);
+    text-decoration: none;
+}
+
+.footer .footer-content h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.footer .footer-content .footer-links {
+    margin-bottom: 30px;
+}
+
+.footer .footer-content .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer .footer-content .footer-links ul li {
+    padding: 8px 0;
+}
+
+.footer .footer-content .footer-links ul li:first-child {
+    padding-top: 0;
+}
+
+.footer .footer-content .footer-links ul a {
+    color: rgba(255, 255, 255, 0.6);
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+}
+
+.footer .footer-content .footer-links ul a:hover {
+    color: #fff;
+}
+
+.footer .footer-legal .copyright {
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer .footer-legal .credits {
+    padding-top: 4px;
+    font-size: 13px;
+    color: #fff;
+}
+
+.footer .footer-legal .credits a {
+    color: var(--color-primary);
+}
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+    padding: 140px 0 60px 0;
+    min-height: 40vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.breadcrumbs:before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    inset: 0;
+}
+
+.breadcrumbs h2 {
+    font-size: 56px;
+    font-weight: 500;
+    color: #fff;
+    font-family: var(--font-secondary);
+}
+
+.breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0 0 10px 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.breadcrumbs ol a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: 0.3s;
+}
+
+.breadcrumbs ol a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs ol li+li {
+    padding-left: 10px;
+}
+
+.breadcrumbs ol li+li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #fff;
+    content: "/";
+}
+#story{
+    margin: 70px 0;
+}
+/*--------------------------------------------------------------
+# Stats Counter Section
+--------------------------------------------------------------*/
+
+#stats-counter{
+    margin-bottom: 50px;
+}
+.stats-counter .stats-item {
+    background: #fff;
+    box-shadow: 0px 0 30px rgba(82, 86, 94, 0.05);
+    padding: 30px;
+}
+
+.stats-counter .stats-item i {
+    font-size: 42px;
+    line-height: 0;
+    margin-right: 20px;
+    color: var(--color-primary);
+}
+
+.stats-counter .stats-item span {
+    font-size: 36px;
+    display: block;
+    font-weight: 600;
+    color: var(--color-secondary);
+}
+
+.stats-counter .stats-item p {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-primary);
+    font-size: 14px;
+}
+/*--------------------------------------------------------------
+# Contact Section --------------------------------------------------------------*/ .contact .info-item {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+    padding: 20px 0 30px 0;
+}
+
+.contact .info-item i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    line-height: 0;
+    color: var(--color-primary);
+    border-radius: 50%;
+    border: 2px dotted #ffd565;
+}
+
+.contact .info-item h3 {
+    font-size: 20px;
+    color: #6c757d;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.contact .info-item p {
+    padding: 0;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.contact .php-email-form {
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+}
+
+.contact .php-email-form .form-group {
+    padding-bottom: 20px;
+}
+
+.contact .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #df1529;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.contact .php-email-form .error-message br+br {
+    margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #059652;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #059652;
+    border-top-color: #fff;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+    border-color: var(--color-primary);
+}
+
+.contact .php-email-form input {
+    height: 44px;
+}
+
+.contact .php-email-form textarea {
+    padding: 10px 12px;
+}
+
+.contact .php-email-form button[type=submit] {
+    background: var(--color-primary);
+    border: 0;
+    padding: 10px 35px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+    background: rgba(254, 185, 0, 0.8);
+}
+.artikel .img {
+    padding: 140px 0 60px 0;
+    min-height: 40vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.artikel .meta-top a{
+    color: #52565e;
+}
+.artikel .meta-top i{
+    color: #feb900;
+}
+.artikel .judul{
+    color: #414141;
+}
+@media (min-width: 768px) {
+    #hero {
+        overflow: hidden;
+        height: 97vh;
+    }
+
+    #hero .carousel-item {
+        height: 100vh;
+        width: 100%;
+    }
+
+    #hero .info {
+        position: absolute;
+        z-index: 2;
+        inset: 0;
+        top: inherit;
+    }
+
+    #hero .info h2 {
+        color: #fff;
+        font-weight: 700;
+        margin-bottom: 30px;
+        font-size: 56px;
+    }
+
+    .line {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 4px;
+        background: #feb900;
+        margin: 20px auto;
+    }
+
+    #hero .info p {
+        font-size: 18px;
+        color: #ffffffdf;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    #hero .info .btn-get-started {
+        border: 2px solid #feb900;
+        border-radius: 50px;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 1px;
+        padding: 12px 40px;
+        color: #fff;
+    }
+
+    #hero .info .btn-get-started:hover {
+        background: #feb900;
+    }
+
+    .visimisi .info .icon i {
+        width: 60px;
+        height: 60px;
+        background-color: #feb900;
+        font-size: 24px;
+        color: #fff;
+        text-align: center;
+        line-height: 60px;
+    }
+    #story {
+        margin: 150px 0;
+    }
+}
